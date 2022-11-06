@@ -1,0 +1,238 @@
+/* 首页索引的样式代码 */
+/* banner */
+.banner{
+    height: 500px;
+	background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+}
+.banner .wrapper .aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,.8);
+}
+.banner .wrapper .aside a{
+    position: relative;
+    display: block;
+    padding: 0 19px 0 37px;
+    height: 50px;
+    line-height:50px;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+.banner .wrapper .aside a::after{
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+	height: 11px;
+    /* background-color: pink; */
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+.banner .aside a:hover{
+    background-color: #27ba9b;
+}
+.banner .wrapper .aside a span{
+    margin-left: 15px;
+    color: #f5f5f5;
+    font-size: 14px;
+}
+.prev,
+.next{
+    position: absolute;
+    top:230px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 50%;
+    background-image: url(../images/sprites.png);
+}
+.prev{
+    left: 260px;
+    background-position: 14px -60px;
+}
+.next{
+    right: 10px;
+    background-position: -22px -60px;
+}
+.banner ol{
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+    height: 10px;
+}
+.banner ol li{
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 50%;
+}
+.banner ol .current{
+    background-color: rgba(255,255,255);
+}
+/* 新鲜好物 */
+.goods .hd{
+    height: 115px;
+    line-height: 115px;
+}
+.goods .hd h2{
+    float: left;
+    font-size: 29px;
+    height: 114px;
+    font-weight: normal;
+}
+.goods .hd span{
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+.goods .hd a,
+.shengxian .more{
+    float: right;
+    font-size: 16px;
+    color: #999;
+}
+.goods .hd a::after,
+.shengxian .more::after{
+    margin-left: 13px;
+    display: inline-block;
+    content: '';
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+}
+.goods .bd li{
+    position: relative;
+    float: left;
+    margin-right:  8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+.goods .bd li:last-child{
+    margin-right: 0;
+}
+.goods .bd li img{
+    width: 100%;
+}
+.goods .bd li h3{
+    margin-top: 22px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.goods .bd li div{
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.goods .bd li div span{
+    font-size: 23px;
+}
+.goods .bd li b{
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    color: #27ba9b;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+/* 生鲜 */
+.shengxian{
+    height: 708px;
+}
+.shengxian h2{
+    float: left;
+    font-size: 29px;
+    height: 98px;
+    font-weight: normal;
+}
+.shengxian .more{
+    float: right;
+}
+.shengxian .hd{
+    line-height: 98px;
+}
+.shengxian .hd ul{
+    float: right;
+    margin-right: 65px;
+}
+.shengxian .hd ul li{
+    float: left;
+    display: inline-block;
+    margin-left: 6px;
+}
+.shengxian .hd ul li a{
+    padding: 4px 7px;
+    height: 16px;
+}
+.shengxian .hd ul li a:hover{
+    color: #fefbfc;
+    background-color: #27ba9b;
+}
+
+.shengxian .bd .left{
+    float: left;
+    width: 240px;
+    height: 610px;
+    background-color: skyblue;
+}
+ .shengxian .bd .right{
+    float: left;
+    width: 1000px;
+    height: 610px;
+    /* background-color: pink; */
+}
+.shengxian .bd .right ul{
+    float: left;
+    width: 1000px;
+}
+.shengxian .bd .right li{
+    float: left;
+    width: 242px;
+    height: 304px;
+    /* background-color: skyblue; */
+    margin-left: 8px;
+}
+.shengxian .bd .right li:nth-child(n+5){
+    margin-top: 3px;
+}
+.shengxian .bd .right li img{
+    margin: 8px 29px 0;
+    width: 184px;
+}
+.shengxian .bd .right .text{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.shengxian .bd .right .goodsname,
+.shengxian .bd .right .fenliang,
+.shengxian .bd .right .sort,
+.shengxian .bd .right .prize{
+    margin-left: 10px;
+    font-size: 16px;
+    padding-left: 4px;
+
+}
+.shengxian .bd .right .prize{
+    color: #9a2e1f;
+    font-size: 17px;
+}
+.shengxian .bd .right .prize span{
+    font-size: 22px;
+    font-weight: 600;
+}

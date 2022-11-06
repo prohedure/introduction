@@ -1,0 +1,206 @@
+/* 各个页面常用的样式代码 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 快捷菜单 */
+.shortcut{
+    height: 52px;
+    background-color: #333333;
+}
+.shortcut .wrapper{
+    height: 52px;
+    /* background-color: pink; */
+}
+.shortcut .wrapper ul{
+    float: right;
+}
+.shortcut .wrapper li{
+    display: inline-block;
+    line-height: 52px;
+}
+.shortcut .wrapper ul a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+.shortcut .wrapper li:last-child a{
+    border-right: none;
+}
+.shortcut .wrapper li:last-child a span{
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+/* 导航 */
+.header .wrapper{
+    overflow: hidden;
+    margin: 32px auto;
+}
+.header .logo{
+    float: left;
+    margin-left: 24px;
+    display: inline-block;
+    width: 207px;
+    height: 70px;
+    /* background-color: pink; */
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+.header .nav{
+    float: left;
+    margin-left: 40px;
+    height: 70px;
+    /* background-color: pink; */
+}
+.header li{
+    display: inline-block;
+    /* padding-right: 48px; */
+}
+.header li a{
+    margin: 20px 0;
+    height: 30px;
+    display: block;
+    padding: 0 24px;
+    line-height: 30px;
+}
+.header li a:hover{
+    border-bottom: 2px solid #27ba9b;
+}
+.header .search{
+    float: left;
+
+    margin-left: 34px;
+
+    /* margin-bottom: 10px; */
+
+    width: 172px;
+    height: 70px;
+    /* background-color: pink; */
+    text-align: center;
+    line-height: 70px;
+    /* 换行空隙 */
+    font-size: 0;
+}
+.search .box{
+    margin: 16px 0;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 2px solid #e7e7e7;
+    /* vertical-align: middle; */
+
+
+}
+.header .search span{
+    display: inline-block;
+    padding: 10px auto;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+    vertical-align: middle;
+}
+.header .search input{
+    display: inline-block;
+    padding: 10px auto;
+    padding-left: 10px;
+    width: 144px;
+    height: 18px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.header .search input::placeholder{
+    padding-left: 8px;
+    font-size: 14px;
+    color: #cccccc;
+}
+.header .car{
+    position: relative;
+    float: right;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    /* background-color: pink; */
+    margin: 24px 0;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+    vertical-align: middle;
+}
+.header .car span{
+    position: absolute;
+    right: -6px;
+    top: -6px;
+    width: 20px;
+	height: 15px;
+	background-color: #e26237;
+	border-radius: 8px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+/* 版权 */
+.footer{
+    height: 340px;
+    background-color: #333333;
+}
+.footer .wrapper{
+
+    width: 1393px;
+    color: #434343;;
+}
+.footer .top{
+    
+    padding-top: 65px;
+    padding-left: 130px;
+    height: 174px;
+    border-bottom: 2px solid #434343;
+
+}
+.footer .top li{
+    display: inline-block;
+    margin-right: 298px;
+    width: 200px;
+	height: 58px;
+    /* background-color: #fff; */
+    font-size: 28px;
+    color: #ffffff;
+    line-height:58px;
+}
+.footer .top li::before{
+    display: inline-block;
+    margin-right: 20px;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+.footer .top li:nth-child(2)::before{
+    background-position: -65px 0;
+}
+.footer .top li:nth-child(3)::before{
+    background-position: -129px 0;
+}
+.footer .top li:last-child{
+    margin-right: 0;
+}
+.footer .bottom{
+    padding-top: 41px;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+.footer a{
+    font-size: 14px;
+    color: #999999;
+}
+.footer .banquan{
+    padding-top: 20px;
+}
