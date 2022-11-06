@@ -1,0 +1,157 @@
+@import './base.less';
+// 变量
+@vw: 3.75vw;
+@color: #fb7299;
+
+
+// 头
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100vw;
+    height: (84 / @vw);
+    border-bottom: 1px solid #ccc;
+
+    background-color: #fff;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: (375 / @vw);
+        height: (44 / @vw);
+        padding-left: (18 / @vw );
+        padding-right: (12 / @vw);
+
+        .Navbar_logo {
+            color: @color;
+            font-size: (28 / @vw);
+        }
+
+        .right {
+            display: flex;
+
+            .ic_search_tab {
+                font-size: (22 / @vw);
+                color: #ccc;
+            }
+
+            .login {
+                width: (24 / @vw);
+                height: (24 / @vw);
+                margin-left: (20 / @vw);
+            }
+
+            .download {
+                width: (72 / @vw);
+                height: (24 / @vw);
+                margin-left: (20 / @vw);
+            }
+        }
+
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        height: (40 / @vw);
+
+        ul {
+            display: flex;
+
+            li {
+                padding: 0 (16 / @vw);
+                text-align: center;
+
+                a {
+                    display: block;
+                    line-height: (38 / @vw);
+
+                    &.current {
+                        border-bottom: 2px solid @color;
+                        color: #fb7299;
+                    }
+                }
+            }
+        }
+
+        .iconfont {
+            width: (40 / @vw);
+            height: (40 / @vw);
+            font-size: (22 / @vw);
+            color: #ccc;
+            text-align: center;
+            line-height: (40 / @vw);
+        }
+    }
+}
+
+// 内容
+.videos {
+
+    padding: (84 / @vw) (5 / @vw) 0;
+
+    .class1 {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            display: inline-block;
+            width: 50%;
+            padding: (8 / @vw) (5 / @vw);
+
+            .pic {
+                position: relative;
+
+                .shadow {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(transparent, black);
+                }
+
+                .count {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: (5 / @vw) (6 / @vw);
+                    width: 100%;
+                    color: #fff;
+                }
+            }
+
+            .txt {
+                margin-top: (5 / @vw);
+            }
+        }
+    }
+
+}
+
+// 尾巴
+footer {
+    display: flex;
+    justify-content: center;
+
+    div {
+        position: fixed;
+        bottom: 10vw;
+        border-radius: 5vw;
+
+        width: 90vw;
+        height: 10vw;
+        color: #fff;
+        background-color: @color;
+        text-align: center;
+        line-height: 10vw;
+        span{
+            margin-left: 5vw;
+        }
+    }
+}
