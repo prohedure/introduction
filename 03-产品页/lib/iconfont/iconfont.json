@@ -1,0 +1,37 @@
+{
+  "id": "3666415",
+  "name": "地理信息产品",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1183025",
+      "name": "属性",
+      "font_class": "shuxing",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "11372699",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e8b8",
+      "unicode_decimal": 59576
+    },
+    {
+      "icon_id": "26033200",
+      "name": "空间谱",
+      "font_class": "kongjianpu",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "10549653",
+      "name": "GIS应用",
+      "font_class": "GISyingyong",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    }
+  ]
+}

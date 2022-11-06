@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  top: 0;
+}
+body {
+  overflow: auto;
+}
+.all {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url(../survey.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background .shadow {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(71, 70, 143, 0.7);
+  overflow: auto;
+}
+.background .shadow .content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 15px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-weight: 100;
+  font-size: larger;
+  font: "苹方", sans-serif;
+}
+.background .shadow .content header h4 {
+  line-height: 50px;
+}
+.background .shadow .content header i {
+  display: block;
+  font-size: larger;
+  font-weight: 100;
+  font-family: "苹方", sans-serif;
+  margin-top: 5px;
+}
+.background .shadow .content .survey {
+  margin-top: 25px;
+  padding: 46px 44px 0;
+  width: 760px;
+  background-color: pink;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  overflow: -moz-hidden-unscrollable;
+}
+.background .shadow .content .survey .form-group {
+  padding: 10px 0;
+}
+.background .shadow .content .survey .form-group input {
+  height: 40px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.background .shadow .content .survey label.areafather {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.background .shadow .content .survey label.areafather .area {
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+  color: #000;
+}
+.background .shadow .content .survey .btnn {
+  display: flex;
+  justify-content: center;
+}
+.background .shadow .content .survey .btnn .btn {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: green;
+  color: #fff;
+  font-size: larger;
+}

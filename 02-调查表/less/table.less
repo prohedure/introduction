@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    top: 0;
+}
+body{
+    overflow: auto;
+}
+// 变量
+@font:  "苹方",sans-serif;
+
+.all{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+// 背景
+.background{
+    // width: 100vw;
+    // height: 100vh;
+    // background-color: pink;
+    width: 100%;
+    height: 100%;
+    background-image: url(../survey.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: 0 -150px;
+    // overflow: scroll;
+    .shadow{
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(71, 70, 143, 0.7);
+        overflow: auto;
+        // 内容
+.content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 15px;
+    width: 100%;
+    // height: 100%;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    font-size: larger;
+    font:@font;
+    header{
+        h4{
+            line-height: 50px;
+        }
+        i{
+            display: block;
+            font-size: larger;
+            font-weight: 100;
+            font-family:@font;
+            margin-top: 5px;
+        }
+    }
+    .survey{
+        margin-top: 25px;
+        padding: 46px 44px 0;
+        width: 760px;
+        background-color: pink;
+        text-align: left;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 15px;
+        overflow:-moz-hidden-unscrollable;
+        .form-group{
+            padding: 10px 0;
+            input{
+                height: 40px;
+                border: 1px solid #000;
+                box-sizing: border-box;
+            }
+        }
+
+        label.areafather{
+            width: 100%;
+            padding-bottom: 10px;
+            .area{
+                margin-top: 10px;
+                width: 100%;
+                height: 80px;
+                color: #000;
+            }
+        }
+        .btnn{
+            display: flex;
+            justify-content: center;
+            // text-align: center;
+            .btn{
+                margin-bottom: 30px;
+                width: 100%;
+                height: 50px;
+                background-color: green;
+                color: #fff;
+                font-size: larger;
+            }
+        }
+ 
+    }
+    
+}
+    }
+}

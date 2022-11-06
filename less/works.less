@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+
+}
+
+html {
+    font-family: "微软雅黑", sans-serif;
+}
+
+body {
+    overflow: auto;
+    // display: flex;
+    // flex-direction: column;
+}
+
+// 变量
+@color: rgb(190, 49, 68);
+
+// 导航
+nav {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background-color: @color;
+    text-align: right;
+
+    ul {
+        display: flex;
+        justify-content: right;
+
+        li {
+            a {
+                display: block;
+                padding: 0 30px;
+                height: 65px;
+                line-height: 65px;
+                font-weight: 700;
+                font-size: larger;
+                transition: all .8s;
+
+                &:hover {
+                    background-color: rgb(69, 86, 125);
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// 关于
+.content1 {
+    // flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    overflow: auto;
+
+}
+
+#about {
+
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+
+    p {
+        margin-top: 15px;
+        color: @color;
+        font-size: 28px;
+    }
+}
+
+// 作品
+#works {
+    // display: flex;
+    // justify-content: center;
+    padding: 80px 20px;
+    width: 100%;
+    background-color: rgb(69, 86, 125);
+    text-align: center;
+
+    h1 {
+        margin: 0 auto 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid white;
+        width: 50%;
+
+        color: white;
+        // text-decoration: underline;
+
+
+    }
+
+    .works_body {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 70%;
+
+            li {
+                // display: flex;
+                // flex-wrap: wrap;
+                margin-bottom: 20px;
+                height: 380px;
+
+                a {
+                    display: block;
+                    height: 100%;
+                    background-color: rgb(48, 56, 65);
+
+                    &:hover {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 85%;
+                    }
+
+                    .txt {
+                        margin-top: 20px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    a.more {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 0;
+        width: 150px;
+        height: 50px;
+        background-color: rgb(48, 56, 65);
+        text-align: center;
+        line-height: 50px;
+        transition: all .3s;
+
+        &:hover {
+            color: white;
+            background-color: @color ;
+            text-decoration: none;
+
+        }
+
+        .icon-arrow-right {
+            vertical-align: middle;
+            font-size: 25px;
+            transition: all 1s;
+        }
+
+        i {
+            display: inline-block;
+            // margin-left: 30; 
+            width: 70px;
+            height: 100%;
+            font-style: normal;
+        }
+
+    }
+
+}
+
+.more:hover span {
+    display: inline-block;
+    transform: translateX(10px);
+    // margin-right: -10px;
+}
+
+// 联系
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(48, 56, 65);
+    color: white;
+    h1{
+        margin-top: 19vh;
+    }
+    p {
+        padding: 2vh 0 10vh;
+        font-size: larger;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0 0 20vh 0;
+
+        li {
+            padding: 0 20px;
+            transition: all .5s;
+
+            a {
+                display: block;
+                height: 60px;
+                width: 100px;
+                font-size: 20px;
+
+                &:hover {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .iconfont {
+                    margin-right: 10px;
+                    font-size: 30px;
+                    vertical-align: middle;
+                }
+            }
+
+            &:hover {
+
+                transform: translateY(20px);
+            }
+        }
+    }
+
+
+}
+footer{
+        
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 3px solid @color;
+    // padding: 20px 20px;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(48, 56, 65);
+    color: white;
+    // line-height: 10vh;
+    .iconfont{
+        font-size: 25px;
+        vertical-align: middle;
+    }
+
+}

@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+.btn {
+  color: #fff;
+  border: none;
+  transition: all 0.7s;
+}
+.btn:hover {
+  border-bottom: 1px solid #000;
+  background-color: white !important;
+  color: #000 !important;
+  font-size: larger;
+  font-weight: bolder;
+  content: '开始探索GIS♥';
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .logo.iconfont,
+  .feature.iconfont {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
+body {
+  background-color: #e9e9e9;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #e9e9e9;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  height: 100%;
+  line-height: 100px;
+  font-weight: 700;
+}
+header .logo .iconfont {
+  margin-right: 20px;
+  margin-top: -5px;
+  transform: translateY(3px);
+  font-size: 40px;
+}
+header .logo h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+header .nav {
+  padding-right: 80px;
+}
+header .nav ul {
+  display: flex;
+}
+header .nav ul li a {
+  display: inline-block;
+  margin: 0 15px;
+  height: 100px;
+  line-height: 100px;
+}
+@media (max-width: 768px) {
+  header .nav ul.more {
+    display: none;
+  }
+}
+.content {
+  padding-top: 100px;
+}
+.content .introduction {
+  text-align: center;
+}
+.content .introduction h2 {
+  height: 80px;
+  line-height: 80px;
+}
+.content .introduction input {
+  margin-bottom: 30px;
+  width: 400px;
+  height: 40px;
+  background-color: green;
+}
+.content .introduction .text {
+  border: none;
+  padding-left: 15px;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+}
+.content .introduction .text::placeholder {
+  text-align: center;
+}
+.content #feature .featuregroup {
+  display: flex;
+  padding: 30px;
+  vertical-align: middle;
+}
+.content #feature .featuregroup .iconfont {
+  margin-bottom: -8px;
+  font-size: 55px;
+  line-height: 99px;
+}
+.content #feature .featuregroup .info {
+  margin-left: 24px;
+}
+.content #feature .featuregroup .info p {
+  margin-top: 10px;
+}
+.content #gisart {
+  margin: 0 auto 50px;
+  height: 380px;
+  width: 675px;
+  text-align: center;
+  overflow: hidden;
+  border: 8px solid rgba(51, 59, 80, 0.7);
+}
+.content #gisart ul {
+  display: flex;
+  animation: slide 8s linear infinite;
+}
+@keyframes slide {
+  to {
+    transform: translateX(-2025px);
+  }
+}
+.content #books ul {
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+}
+.content #books ul li {
+  text-align: center;
+}
+.content #books ul li div {
+  display: block;
+  margin-bottom: 50px;
+  border: 1px solid #000;
+  height: 250px;
+}
+.content #books ul li div h5 {
+  margin-top: 0;
+  padding: 15px 0;
+  background-color: #c9c9c9;
+  font-size: large;
+  font-weight: normal;
+}
+.content #books ul li div p {
+  line-height: 25px;
+}
+.content #books ul li div a {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 30px;
+  background-color: green;
+  color: #fff;
+  line-height: 30px;
+  transition: all 0.3s;
+}
+.content #books ul li div a:hover {
+  text-decoration: none;
+  font-size: large;
+  background-color: #3caa77;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px 20px;
+  background-color: #dcdcdc !important;
+  text-align: right;
+}
+.foot a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0 10px;
+}
